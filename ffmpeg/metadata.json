@@ -1,0 +1,26 @@
+{
+  "property": "ffmpeg",
+  "path": "ffmpeg",
+  "icon": "svg",
+
+  "title": "FFMpeg",
+  "description": "Медиаконтент",
+  "version": "8.0.1",
+  "uninstallEnv": "ffmpeg",
+
+  "arch": {
+    "windows": {
+      "file": "ffmpeg-8.0.1-essentials_build.zip",
+      "appType": "ffmpeg-8.0.1-essentials_build/bin/ffmpeg.exe"
+    },
+    "mac": {
+      "file": "ffmpeg.zip",
+      "appType": "ffmpeg",
+      "executableAccess": true
+    },
+    "linux": {
+      "custom": true,
+      "instruction": "required env app \"ffmpeg\""
+    }
+  }
+}

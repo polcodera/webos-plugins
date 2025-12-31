@@ -1,0 +1,27 @@
+{
+  "property": "ffprobe",
+  "path": "ffprobe",
+  "icon": "svg",
+
+  "title": "FFProbe",
+  "description": "Медиаконтент",
+  "version": "6.1",
+  "uninstallEnv": "ffprobe",
+
+  "arch": {
+    "windows": {
+      "file": "ffmpeg",
+      "linkPlugin": true,
+      "appType": "ffmpeg-8.0.1-essentials_build/bin/ffprobe.exe"
+    },
+    "mac": {
+      "file": "ffprobe-6.1-macos-64.zip",
+      "appType": "ffprobe",
+      "executableAccess": true
+    },
+    "linux": {
+      "custom": true,
+      "instruction": "required env app \"ffprobe\""
+    }
+  }
+}

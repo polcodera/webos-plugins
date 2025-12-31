@@ -1,0 +1,7 @@
+{
+  "plugins": [
+    "ffmpeg",
+    "ffprobe"
+  ],
+  "build": 1
+}
